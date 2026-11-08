@@ -1,0 +1,111 @@
+/* AppNavbar.css */
+
+/* Set the navbar background to a festive Christmas gradient */
+.navbar-custom {
+    background: linear-gradient(to right, #ff3b3f, #ff9b44);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+  }
+  
+  /* Custom font style for the brand with festive decorations */
+  .navbar-brand-custom {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for the brand name to give it a playful touch */
+  .navbar-brand-custom:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+  }
+  
+  /* Styling the navigation links */
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar-links {
+    border: 1px solif black;
+  }
+  
+  /* Custom styling for the nav links */
+  .nav-link-custom {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Christmas-themed hover effects */
+  .nav-link-custom:hover {
+    color: #f1c40f; /* Gold color */
+    transform: translateY(-5px);
+  }
+  
+  .nav-link-custom:before {
+    content: '❄️';
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-link-custom:hover:before {
+    opacity: 1;
+    left: -35px;
+  }
+  
+  /* Adding a snowflake background animation */
+  @keyframes snowflakes {
+    0% {
+      top: -5%;
+      left: 5%;
+    }
+    100% {
+      top: 100%;
+      left: 100%;
+    }
+  }
+  
+  .snowflake {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.8;
+    animation: snowflakes 10s linear infinite;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  .snowflake:nth-child(odd) {
+    animation-duration: 12s;
+  }
+  
+  /* Adjust styling for mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar-custom {
+      background: #ff9b44;
+    }
+  
+    .navbar-brand-custom {
+      font-size: 2rem;
+    }
+  
+    .nav-link-custom {
+      font-size: 1.1rem;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.leaderboard-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .leaderboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .leaderboard-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .leaderboard-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .rank {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .name {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .votes {
+    font-weight: bold;
+    color: #28a745;
+  }
+  

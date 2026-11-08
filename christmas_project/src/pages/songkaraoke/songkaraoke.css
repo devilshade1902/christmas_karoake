@@ -1,0 +1,128 @@
+/* Container for the entire component */
+.songkaraoke-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ff; /* Soft light blue background */
+    background-image: url('../../../src//assets/christmas_background.jpg'); /* Christmas-themed background */
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100vh; */
+    padding: 20px;
+  }
+  
+  /* Song title styling */
+  .song-title {
+    color: #ff4b5c; /* Festive red */
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.4);
+  }
+  
+  /* Lyrics container with overflow and scroll */
+  .lyrics-container {
+    max-height: 300px;
+    width: 80%;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for lyrics container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Styling for each line of lyrics */
+  .line {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0;
+    padding: 5px;
+    transition: color 0.3s, font-weight 0.3s;
+  }
+  
+  /* Active line styling */
+  .current-line {
+    color: #ff4b5c; /* Highlight current line in red */
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 15px 0;
+    padding: 5px;
+    transition: color 0.3s, font-weight 0.3s;
+  }
+  
+  /* Audio player styling */
+  .audio-player {
+    background-color: #ff4b5c;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-top: 30px;
+    width: 60%;
+  }
+  
+  /* For when the audio player is hovered over */
+  .audio-player:hover {
+    background-color: #f44336; /* Slightly darker red when hovered */
+  }
+
+
+  .audio-controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .restart-button {
+    background-color: #ff4b5c; /* Festive red */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px; /* Space between button and audio player */
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .restart-button:hover {
+    background-color: #f44336; /* Slightly darker red on hover */
+    transform: scale(1.05);
+  }
+  
+  .restart-button:active {
+    transform: scale(1);
+  }
+  
+  
+  /* Optional: Snowfall animation for added Christmas effect */
+  @keyframes snowfall {
+    0% {
+      top: -5%;
+      opacity: 0.9;
+    }
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    opacity: 0.9;
+    animation: snowfall 10s linear infinite;
+    font-size: 1.5rem;
+  }
+  
+  
